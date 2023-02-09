@@ -20,7 +20,7 @@ services:
       - app:/var/www/html
 
   spx:
-    image: spx
+    image: ghcr.io/nedix/spx-docker:latest
     volumes:
       - app:/var/www/html
       - spx:/data/spx
