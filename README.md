@@ -1,6 +1,11 @@
 # spx-docker
 
-## Setup
+A Docker image that uses the [SPX](https://github.com/NoiseByNorthwest/php-spx)
+extension to give insight into performance data of requests to a PHP application.
+
+## Example
+
+### Setup
 
 *docker-compose-spx.yml*
 
@@ -20,23 +25,24 @@ services:
       - app:/var/www/html
 
   spx:
-    image: ghcr.io/nedix/spx-docker:latest
+    image: ghcr.io/nedix/spx-docker:8.2
     volumes:
       - app:/var/www/html
-      - spx:/data/spx
     depends_on:
       - nginx-spx
 
 volumes:
   app:
     driver: local
-  spx:
-    driver: local
+    driver_opts:
+      device: ${PWD}
+      o: bind
+      type: none
 ```
 
-## Usage
+### Usage
 
-### Step 1.
+#### Step 1.
 
 Start the containers:
 
@@ -44,10 +50,10 @@ Start the containers:
 docker compose -f docker-compose.yml -f docker-compose-spx.yml up -d
 ```
 
-### Step 2.
+#### Step 2.
 
 Navigate to your page on [localhost:8000](http://localhost:8000) to capture the profiling data.
 
-### Step 3.
+#### Step 3.
 
 Find SPX on [localhost:8000/?SPX_UI_URI=/&SPX_KEY=dev](http://localhost:8000/?SPX_UI_URI=/&SPX_KEY=dev).
