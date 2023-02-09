@@ -1,4 +1,4 @@
-FROM wodby/php:8.1
+FROM --platform=$BUILDPLATFORM wodby/php:8.1
 
 USER root
 
