@@ -1,6 +1,6 @@
-# [spx]-docker
+# spx-docker
 
-Use the [PHP SPX][SPX] extension to give insight into performance metrics of a PHP application.
+Use the [PHP SPX][SPX] extension to gain insight into performance metrics of a PHP application.
 
 ## Setup
 
