@@ -4,27 +4,30 @@
     "/^release\\/.*/",
   ],
   enabledManagers: [
-    "regex",
+    "custom.regex",
+    "github-actions",
   ],
-  regexManagers: [
+  customManagers: [
     {
+      depNameTemplate: "PHP",
       fileMatch: ["^Dockerfile$"],
       matchStrings: ["ARG PHP_VERSION=(?<currentValue>.*?)\\n"],
       datasourceTemplate: "docker",
-      depNameTemplate: "php",
+      packageNameTemplate: "php",
     },
     {
+      depNameTemplate: "SPX",
       fileMatch: ["^Dockerfile$"],
       matchStrings: ["ARG SPX_VERSION=(?<currentValue>.*?)\\n"],
       datasourceTemplate: "github-releases",
-      depNameTemplate: "NoiseByNorthwest/php-spx",
+      packageNameTemplate: "NoiseByNorthwest/php-spx",
     },
   ],
   packageRules: [
     {
-      description: "Disable grouping for regex managed dependencies",
-      matchDepTypes: ["regex"],
-      groupName: null
-    }
+      description: "Disable grouping for all dependencies",
+      matchPackagePatterns: [".*"],
+      groupName: null,
+    },
   ],
 }
