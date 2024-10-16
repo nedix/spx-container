@@ -1,0 +1,26 @@
+services:
+  nginx-spx:
+    image: wodby/nginx:1.19
+    environment:
+      NGINX_VHOST_PRESET: php
+      NGINX_BACKEND_HOST: spx
+      NGINX_SERVER_ROOT: /var/www/html/public_html
+    ports:
+      - 81:80
+    volumes:
+      - app:/var/www/html
+
+  spx:
+    image: nedix/spx
+    volumes:
+      - app:/var/www/html
+    depends_on:
+      - nginx-spx
+
+volumes:
+  app:
+    driver: local
+    driver_opts:
+      device: ${PWD}
+      o: bind
+      type: none
