@@ -1,6 +1,6 @@
 # [spx-container](https://github.com/nedix/spx-container)
 
-Web GUI displaying flame graphs for PHP applications.
+Web GUI that displays flame graphs for requests to a PHP application.
 
 ## Usage
 
