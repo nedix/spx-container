@@ -1,6 +1,6 @@
 # [spx-container](https://github.com/nedix/spx-container)
 
-Gain insight into performance metrics of a PHP application.
+Web GUI displaying flame graphs for PHP applications.
 
 ## Setup
 
