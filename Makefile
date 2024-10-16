@@ -1,5 +1,5 @@
 setup:
-	@docker build . -t spx
+	@docker build --progress=plain -f Containerfile -t spx .
 
 up: detach =
 up:
