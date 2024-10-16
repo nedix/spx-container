@@ -24,7 +24,7 @@ services:
       - app:/var/www/html
 
   spx:
-    image: ghcr.io/nedix/spx-container:8.2
+    image: nedix/spx
     volumes:
       - app:/var/www/html
     depends_on:
