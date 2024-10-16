@@ -9,7 +9,7 @@ Web GUI that displays flame graphs for requests to a PHP application.
 This example Docker Compose manifest expects that you have your main application services defined in `compose.yml`. It will listen for requests on port `81`.
 
 ```shell
-wget -q https://raw.githubusercontent.com/nedix/spx-container/main/docs/examples/compose.yml
+wget -q https://raw.githubusercontent.com/nedix/spx-container/main/docs/examples/compose-spx.yml
 ```
 
 #### Start the services
