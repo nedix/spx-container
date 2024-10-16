@@ -1,4 +1,4 @@
-# [spx]-container
+# [spx-container](https://github.com/nedix/spx-container)
 
 Use the PHP SPX extension to gain insight into performance metrics of a PHP application.
 
