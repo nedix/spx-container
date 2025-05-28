@@ -7,7 +7,7 @@ Web GUI to display flame graphs for requests to a PHP application.
 
 ## Usage
 
-The following example expects that you have your main application services defined in `compose.yml`. It will listen for requests on port `81`.
+The following example expects that you have your projects' containers defined in `compose.yml`. It will listen for requests on port `81`.
 
 
 ### 1. Create the Compose manifest
