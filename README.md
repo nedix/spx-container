@@ -13,7 +13,7 @@ The following example expects that you have your main application services defin
 ### 1. Create the Compose manifest
 
 ```shell
-wget -q https://raw.githubusercontent.com/nedix/spx-container/main/docs/examples/compose.yml
+wget -O compose-spx.yml https://raw.githubusercontent.com/nedix/spx-container/main/docs/examples/compose.yml
 ```
 
 
