@@ -1,6 +1,6 @@
 # [spx-container][project]
 
-Web GUI to display flame graphs of requests to PHP applications.
+Web GUI to display flame graphs for requests to a PHP application.
 
 <img width="1511" alt="Screenshot at Oct 17 02-10-36" src="https://github.com/user-attachments/assets/3f935f95-c993-4434-9b6f-c3632cf8aa37">
 
