@@ -2,7 +2,7 @@
 
 Web GUI to display flame graphs for requests to a PHP application.
 
-<img width="1511" alt="Screenshot at Oct 17 02-10-36" src="https://github.com/user-attachments/assets/3f935f95-c993-4434-9b6f-c3632cf8aa37">
+![spx-hero](https://raw.githubusercontent.com/nedix/spx-container/refs/heads/main/docs/static/hero.png)
 
 
 ## Usage
