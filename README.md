@@ -1,6 +1,6 @@
 # [spx-container][project]
 
-Web GUI to display flame graphs for requests to a PHP application.
+Web GUI to display flame graphs for requests to PHP applications.
 
 ![spx-hero](https://raw.githubusercontent.com/nedix/spx-container/refs/heads/main/docs/static/hero.png)
 
