@@ -18,4 +18,11 @@
       packageNameTemplate: "NoiseByNorthwest/php-spx",
     },
   ],
+  packageRules: [
+    {
+      description: "Custom versioning for SPX",
+      matchPackageNames: ["NoiseByNorthwest/php-spx"],
+      extractVersion: "^v(?<version>.*)$",
+    },
+  ],
 }

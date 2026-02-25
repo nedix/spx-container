@@ -1,5 +1,5 @@
 ARG PHP_VERSION=8.5
-ARG SPX_VERSION=v0.4.22
+ARG SPX_VERSION=0.4.22
 
 FROM --platform=$BUILDPLATFORM wodby/php:${PHP_VERSION}-dev
 
@@ -14,7 +14,7 @@ RUN apk add --virtual .build-deps \
         zlib-dev \
     && git clone https://github.com/NoiseByNorthwest/php-spx.git /build \
     && cd /build \
-    && git checkout tags/${SPX_VERSION} \
+    && git checkout "tags/v${SPX_VERSION}" \
     && phpize \
     && ./configure \
     && make \
