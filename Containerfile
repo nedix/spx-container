@@ -22,6 +22,6 @@ RUN apk add --virtual .build-deps \
     && rm -rf /build \
     && apk del .build-deps
 
-ADD rootfs /
+COPY /rootfs/ /
 
 EXPOSE 9000
